@@ -8,6 +8,7 @@ import (
 
 var handlers = map[string]handler.Handler{
   "/": &handler.HomeHandler{},
+  "/favicon.ico": &handler.FaviconHandler{},
   "fallback": &handler.FallbackHandler{},
 }
 
