@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-go": "0.0.4",
+    "grunt-wiredep": "^2.0.0"
+  }
+}

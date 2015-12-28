@@ -1,0 +1,26 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/Ingelheim/go-test",
+  "authors": [
+    "Lukas Ingelheim <lukas.ingelheim@thoughtworks.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "es6",
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
