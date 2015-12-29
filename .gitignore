@@ -3,4 +3,6 @@
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-public/bower_components
+node_modules
+public/js/bower_components
+public/js/angular/node_modules
