@@ -1,6 +1,7 @@
 #!/bin/bash
 npm install
-cp -r node_modules/angular2 public/js/angular/lib/
-cp -r node_modules/systemjs public/js/angular/lib/
-cp -r node_modules/rxjs public/js/angular/lib/
-grunt browserify
+if [ ! -d $(pwd)/public/js/angular/lib/ ]; then
+  mkdir $(pwd)/public/js/angular/lib/
+fi
+cp -r $(pwd)/node_modules/angular2 $(pwd)/public/js/angular/lib/
+cp -r $(pwd)/node_modules/rxjs $(pwd)/public/js/angular/lib/

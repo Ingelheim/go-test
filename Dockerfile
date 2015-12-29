@@ -5,10 +5,7 @@ RUN     apt-get install -y nodejs npm
 RUN     ln -s /usr/bin/nodejs /usr/bin/node
 
 ADD . /go
-
-RUN     npm install -g grunt-cli
-RUN     npm install
-RUN     bash /go/scripts/make_app.sh
+RUN     bash $(pwd)/scripts/make_app.sh
 
 RUN go install test-server/server
 
