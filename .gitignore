@@ -6,3 +6,5 @@
 node_modules
 public/js/bower_components
 public/js/angular/node_modules
+bin
+pkg
