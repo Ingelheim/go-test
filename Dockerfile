@@ -6,9 +6,11 @@ RUN     ln -s /usr/bin/nodejs /usr/bin/node
 
 ADD . /go
 
-RUN     ./scripts/make_app.sh
+RUN     npm install -g grunt-cli
+RUN     npm install
+RUN     bash /go/scripts/make_app.sh
 
 RUN go install test-server/server
-ENTRYPOINT /go/bin/server
 
+ENTRYPOINT /go/bin/server
 EXPOSE 8080
