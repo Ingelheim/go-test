@@ -3,15 +3,13 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    wiredep: {
-    task: {
-      directory: 'public/bower_components',
-      src: [
-        'home.html'
-      ]
+    browserify: {
+      main: {
+        src: 'entry.js',
+        dest: 'public/js/angular/bundle.js'
+      }
     }
-  }
   });
 
-  grunt.loadNpmTasks('grunt-wiredep');
+  grunt.loadNpmTasks('grunt-browserify');
 };

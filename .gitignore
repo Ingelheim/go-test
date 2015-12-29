@@ -6,6 +6,6 @@
 !.elasticbeanstalk/*.global.yml
 node_modules
 public/js/bower_components
-public/js/angular/node_modules
+public/js/angular/lib/*
 bin
 pkg
